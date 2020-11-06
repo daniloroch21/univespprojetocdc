@@ -16,10 +16,24 @@
   <div id="container">
       
     <div class="botoes">
+
+      <form ng-submit="fechaTeclado()">
+        <div class="bar bar-subheader bar-light">
+            <label class="item item-input item-floating-label">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" size="100" ng-model="q" placeholder="Procurar" type="submit" ng-submit="fechaTeclado()" ng-click="fechaTeclado()"/>
+                <input type="submit" id="submit" value="OK" ng-click="fechaTeclado()"/>
+
+            </label>
+        </div>
+        </form>
+
+
       <input type="procurar" input type="number" class="procurar" name="q" placeholder="Informe o CPF" required="required">
-     
+      
       <button [routerLink]="['/cadastrar']" routerdirection="forward" class="btn2 two">CADASTRAR</button>
       <button [routerLink]="['/informacao']" routerdirection="forward" class="btn3 three">INFORMAÇÕES</button>
+     
       
 
     </div>
