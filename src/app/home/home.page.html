@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Doação de cestas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+      
+    <div class="botoes">
+      <input type="procurar" input type="number" class="procurar" name="q" placeholder="Informe o CPF" required="required">
+     
+      <button [routerLink]="['/cadastrar']" routerdirection="forward" class="btn2 two">CADASTRAR</button>
+      <button [routerLink]="['/informacao']" routerdirection="forward" class="btn3 three">INFORMAÇÕES</button>
+      
+
+    </div>
+    
+  </div>
+</ion-content>
+
